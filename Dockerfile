@@ -2,7 +2,6 @@ FROM node:4
 
 RUN npm install -g -q npm \
   && npm install -g -q yo bower gulp jasmine karma-cli tsd
-# chmod 755 /usr/local/lib/node_modules/
 
 ### Create user to fix yeoman problem with root ################################
 # Error: EACCES, permission denied '/root/.config/configstore/insight-yo.json'
