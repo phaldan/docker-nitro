@@ -14,4 +14,11 @@ Next step would be to start a new container with this image:
 docker run -d -v "$PWD":/home/yeoman/nitro -p 8080:8080 -e NITRO_PRE=scss phaldan/generator-nitro
 ```
 
-If not exist, the container creates a new nitro project in `/home/yeoman/nitro`.
+If not exist, the container creates a new Nitro project in `/home/yeoman/nitro`.
+
+Project creation needs a few minutes depending on your internet connection.
+Use the following command to check status of the project creation:
+
+```
+docker logs <container> 2>/dev/null | grep 'Nitro listening on'
+```
