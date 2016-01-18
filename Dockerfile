@@ -20,4 +20,4 @@ VOLUME ["/home/yeoman/nitro"]
 ENV NITRO_PRE less
 ENV NITRO_JS JavaScript
 
-CMD yes "" | yo nitro --no-insight --pre=$NITRO_PRE --js=$NITRO_JS && node server.js
+CMD yes "" | yo nitro --no-insight --pre=$NITRO_PRE --js=$NITRO_JS && gulp develop
